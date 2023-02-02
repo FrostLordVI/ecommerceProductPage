@@ -1,0 +1,105 @@
+
+#grid {
+    width: 500px;
+    height: 650px;
+    
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+    gap:10px 33px; 
+    grid-template-areas: 
+      "mainCell mainCell mainCell mainCell"
+      "mainCell mainCell mainCell mainCell"
+      "mainCell mainCell mainCell mainCell"
+      "mainCell mainCell mainCell mainCell"
+      "cell1 cell2 cell3 cell4"; 
+}
+#prevMobile, #nextMobile{
+  display: none;
+}
+img.bigSize{
+    width: 500px;
+    border-radius: 10px;
+}
+
+img.smallSize{
+    width: 96px;
+    border-radius: 8px;
+    
+}
+
+#cellMain { grid-area: mainCell;cursor:pointer ;}
+#cellMain:hover{opacity: 1;}
+#cell1 { grid-area: cell1; }
+#cell2 { grid-area: cell2; }
+#cell3 { grid-area: cell3; }
+#cell4 { grid-area: cell4; }
+
+.cell{
+  height: 96px;
+  width:96px;
+  border: 2px solid rgba(255, 102, 0, 0);
+  cursor: pointer;
+}
+
+.cell:hover{
+  opacity: .5;
+}
+
+.cell.choosen{
+  border: 3px solid rgb(255, 102, 0);
+  border-radius: 10px;
+  cursor: default;
+
+  img{
+    opacity: .5;
+  }
+}
+.cell.choosen:hover{
+  opacity: 1;
+}
+
+
+@media screen and (max-width:1000px) {
+  #grid{
+      margin-right: 10px;
+  }
+}
+
+@media screen and (max-width:550px) {
+  #grid{
+      width: 113vw;
+      height: 100vw;
+      #cellMain{
+        width: 114vw;
+        position: relative;
+      }
+      .bigSize{
+        width: 114vw;
+        border-radius: 0;
+      }
+      .cell{
+        display: none;
+      }
+  }
+  
+  #prevMobile, #nextMobile{
+    display:flex;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    top: 120px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  #prevMobile{
+    left: -30px;
+  }
+  #nextMobile{
+   right: -30px; 
+  }
+}

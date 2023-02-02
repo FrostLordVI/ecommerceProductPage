@@ -1,0 +1,166 @@
+#description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 100px;
+    width: 49%;
+    height: 650px;
+}
+#shopping{
+    display: flex;
+    width: 300px;
+    justify-content: flex-start;
+}
+
+#numberOfProducts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+    width: 150px;
+    height: 50px;
+    padding: 0px 0.5vw 0px 0.5vw;
+    border-radius:10px;
+    margin-right: 20px;
+    button{
+        border: none;
+    }
+    #count{
+        color: black;
+        font-size: 25px;
+        text-decoration: none;
+    }
+    #plus{
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+    #minus{
+        width: 25px;
+        height: 10px;
+        cursor: pointer;
+    }
+}
+#addToBasket{
+    display: flex;
+    background-color: #FF8000;
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+}
+#addToBasket:hover{
+    background-color: #ff8000c2;
+}
+h1{
+    font-size: 60px;
+    margin-top: 0px;
+}
+h2{
+    color: #FF8000;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+h3{
+    margin-top: 0;
+    font-size:30px;
+}
+h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 219, 202);
+    color: #FF8000;
+    width: 40px;
+    height: 20px;
+    border-radius: 3px;
+    padding: 3px;
+    margin-top: -10px;
+}
+h5{
+    color: rgb(177, 177, 177);
+    text-decoration: line-through;
+}
+h6{
+    font-size: 18px;
+}
+
+p{
+    color: gray;
+    font-size: 25px;
+    margin-top: -15px;
+}
+
+#whiteCart{
+    filter: brightness(3);
+    margin-right: 20px;
+}
+
+#pricePlace{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 170px;
+    margin-bottom: -45px;
+}
+
+
+@media screen and (max-width:1000px) {
+    #description{
+        transform: scale(.8);
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width:770px) {
+    #description{
+        width: 90vw;
+        margin-top: -100px;
+        margin-bottom: -100px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    #description{
+        justify-content: flex-start;
+        width: 125vw;
+        margin-top: 0px;
+        margin-bottom: -50px;
+        margin-left: 0px;
+        height: 450px;
+
+        h1{
+            font-size: 30px;
+        }
+        h2{
+            margin-top: 50px;
+            font-size: 15px;
+        }
+        p{
+            font-size: 16px;
+        }
+
+        #shopping{
+            flex-direction: column;
+
+            #numberOfProducts{
+                width: 110vw;
+                margin-left: 6%;
+                margin-right: 10%;
+                margin-bottom: 10px;
+            }
+
+            
+            #addToBasket{
+                width: 110vw;
+                margin-left: 6%;
+                margin-right: 10%;
+            }
+        }
+    }
+}

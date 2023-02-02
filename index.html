@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+        <div id="leftSide">
+          <div id="burger">
+            <div id='burger1'></div>
+            <div id='burger2'></div>
+            <div id='burger3'></div>
+          </div>
+          <img src="./ecommerce-product-page-main/images/logo.svg" id="logo" alt="logo">
+        <ul>
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+        </div>
+        <div id="rightSide">
+          
+          <div id="cartBoard">
+            <div id="items"><h6 id="itemsNum">3</h6></div>
+            <img src="./ecommerce-product-page-main/images/icon-cart.svg"  id="blackCart" alt="cart">
+          </div>
+          <img src="./ecommerce-product-page-main/images/image-avatar.png" id="avatar" alt="avatar">
+        </div>
+  </header>
+
+  <main>
+    <div id="prevMobile">
+      <img src="./ecommerce-product-page-main/images/icon-previous.svg" id="previmg"  alt="previous picture">
+    </div>
+
+    <div id="nextMobile">
+      <img src="./ecommerce-product-page-main/images/icon-next.svg" id="nextimg"  alt="next picture">
+    </div>
+    <div id="grid">
+      <div id="cellMain" class='bigCell'>
+       <img src="./ecommerce-product-page-main/images/image-product-1.jpg" class="bigSize" alt="picture of product X">
+      </div>
+      <div id="cell1" class='cell choosen'>
+       <img src="./ecommerce-product-page-main/images/image-product-1.jpg"class="smallSize" alt="picture of product X">
+      </div>
+      <div id="cell2"class='cell'>
+        <img src="./ecommerce-product-page-main/images/image-product-2.jpg"class="smallSize" alt="picture of product X">
+      </div>
+      <div id="cell3"class='cell'>
+        <img src="./ecommerce-product-page-main/images/image-product-3.jpg"class="smallSize" alt="picture of product X">
+      </div>
+      <div id="cell4"class='cell'>
+        <img src="./ecommerce-product-page-main/images/image-product-4.jpg"class="smallSize" alt="picture of product X">
+      </div>
+    </div>
+    <div id="description">
+      <h2>SNEAKER COMPANY</h2>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+      durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+    <div id="pricePlace">
+      <h3>$125.00</h3>
+      <h4>50%</h4>
+     </div> 
+      <h5>$250.00</h5>
+      <div id="shopping">
+        <div id="numberOfProducts">
+          <button><img src="./ecommerce-product-page-main/images/icon-minus.svg" id="minus"  alt="remove one product"></button>
+          <h5 id="count">0</h5>
+          <button><img src="./ecommerce-product-page-main/images/icon-plus.svg" id="plus"  alt="add one more product"></button>
+        </div>
+        <button id="addToBasket">
+          <img src="./ecommerce-product-page-main/images/icon-cart.svg" id="whiteCart" alt="picture of product X">
+          <h6>Add to cart</h6>
+        </button>
+      </div>
+    </div>
+  </main>
+ <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/FrostLordVI?tab=repositories">FrostLordVI</a>.
+  </footer>
+
+  <div id="zoom" class="ON">
+    <div id="gridZ">
+     
+      <div id="cellMainZ" class='bigCell'>
+        <div id="prev">
+          <img src="./ecommerce-product-page-main/images/icon-previous.svg" id="previmg"  alt="previous picture">
+        </div>
+
+      <div id="close">
+        <img src="./ecommerce-product-page-main/images/icon-close.svg" id="closeimg"  alt="close">
+      </div>
+
+      <div id="next">
+        <img src="./ecommerce-product-page-main/images/icon-next.svg" id="nextimg"  alt="next picture">
+      </div>
+       <img id="mainImgZoom" src="./ecommerce-product-page-main/images/image-product-1.jpg" class="bigSize"  alt="picture of product X">
+      </div>
+      
+      <div id="cell1Z" class='cell choosen'>
+       <img src="./ecommerce-product-page-main/images/image-product-1.jpg"class="smallSize"  alt="picture of product X">
+      </div>
+      <div id="cell2Z"class='cell'>
+        <img src="./ecommerce-product-page-main/images/image-product-2.jpg"class="smallSize"  alt="picture of product X">
+      </div>
+      <div id="cell3Z"class='cell'>
+        <img src="./ecommerce-product-page-main/images/image-product-3.jpg"class="smallSize"  alt="picture of product X">
+      </div>
+      <div id="cell4Z"class='cell'>
+        <img src="./ecommerce-product-page-main/images/image-product-4.jpg"class="smallSize" alt="picture of product X">
+      </div>
+    </div>
+  </div>
+
+  <div id="totalCart">
+    <div id="cartHeader"><h4>Cart</h4></div>
+    <hr>
+    <div id="itemDescr">
+      <img src="./ecommerce-product-page-main/images/image-product-1.jpg" alt="picture of product X">
+      <div>
+        <h5>Fall Limited Edition Sneakers</h5>
+        <h5 id="price">$125 x 3 <b>$375.00</b></h5>
+      </div>
+      <img src="./ecommerce-product-page-main/images/icon-delete.svg" id="delItems" alt="delete item"></div>
+    
+    <button id="checkout">Checkout</button>
+  </div>
+
+  <div id="burgerMenu">
+    <img id="burgerClose" src="./ecommerce-product-page-main/images/icon-close.svg">
+    <ul>
+      <li>Collections</li>
+      <li>Men</li>
+      <li>Women</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+<script src="./index.js"></script>
+</body>
+</html>
